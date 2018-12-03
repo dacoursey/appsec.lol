@@ -1,2 +1,5 @@
 theme: jekyll-theme-midnight
 title: [appsec.lol]
+
+# Site settings
+url: "http://appsec.lol"

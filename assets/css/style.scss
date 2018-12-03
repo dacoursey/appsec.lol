@@ -3,6 +3,6 @@
 
 @import "{{ site.theme }}";
 
-header {
-    background-image: url('{{ site.baseurl }}/img/header.png');
+headerimg {
+    background-image: url('/img/header.png')
   }
