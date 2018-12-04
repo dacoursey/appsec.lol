@@ -4,6 +4,7 @@
 @import "{{ site.theme }}";
 
 #header {
+    position: unset;
     background-image: url(../../img/header.png);
     background-size: cover;
     height: 240px;
