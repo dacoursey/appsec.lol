@@ -2,6 +2,10 @@
 layout: default
 ---
 
-Testing the front page.
+Hello there!
 
-[Link to my blog post](./posts/blog.md)
+This site is a collection of my writing and speaking
+
+[List of articles](./posts.md)
+
+[List of speakign videos](./talks.md)
