@@ -4,4 +4,4 @@ layout: default
 
 Testing the front page.
 
-[Link to my blog post](./posts/blog.nd)
+[Link to my blog post](./posts/blog.md)
