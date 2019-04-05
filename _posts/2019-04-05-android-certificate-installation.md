@@ -49,7 +49,7 @@ $ adb remount
 $ adb push 9a5ba580.0 /system/etc/security/cacerts/
 
 // Set the correct file perms on the cert.
-chmod 644 /system/etc/security/cacerts/9a5ba580.0
+$ chmod 644 /system/etc/security/cacerts/9a5ba580.0
 ```
 
 If you run into an error like `Cannot run adb as root in production builds.` then you have to try the next method.
