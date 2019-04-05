@@ -87,3 +87,5 @@ Now whatever method you used, reboot the device and go to:
 `Setttings > Security > Encryption & Credentials > Trusted Credentials`
 
 Scroll down to Portswigger and make sure it's enabled. You should be good to go at this point. Configure the device wifi connection to go through the Burp proxy and point your browser at https://portswigger.net to test. You should have HTTPS traffic in Burp now.
+
+If you run into other problems hit me up on twitter @dacoursey.
