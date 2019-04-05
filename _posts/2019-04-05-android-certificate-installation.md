@@ -6,7 +6,7 @@ modified:
 tags: [Mobile,Pentesting,Hacking,SSLPinning,Android]
 ---
 
-This post is intended to be a list of commands I use to get the Burp certificate installed on Android devices version 8.0 or greater. I am not going to go into a long explanation on what they do.  Most of it was stolen from @kevcody anyway so check out his full [post](https://nvisium.com/blog/2017/07/12/advantages-and-disadvantages-of-android-n-network-security-configuration.html) if you need more help.
+This post is intended to be a list of commands I use to get the Burp certificate installed on Android devices version 8.0 or greater. I am not going to go into a long explanation on what they do.  Most of it was stolen from [@kevcody](https://twitter.com/kevcody) anyway so check out his full [post](https://nvisium.com/blog/2017/07/12/advantages-and-disadvantages-of-android-n-network-security-configuration.html) if you need more help.
 
 I did add a couple bits at the end to get around errors that I was seeing on Pixel devices.
 
@@ -18,7 +18,7 @@ I did add a couple bits at the end to get around errors that I was seeing on Pix
 
 #### Execution
 
-``` shell
+```console
 // Obtain the Burp CA cert by browsing to http://burp name it burpca.cer
 // Convert the .cer file to .pem
 $ openssl x509 -inform der -in burpca.cer -out burpca.pem
@@ -38,7 +38,7 @@ Here's where you may run into trouble.  There are two methods that I know of:
 
 ##### Option A
 
-```shell
+```console
 // Connect with adb.
 $ adb root
 
@@ -56,7 +56,7 @@ If you run into an error like `Cannot run adb as root in production builds.` the
 
 ##### Option B
 
-```shell
+```console
 // Move your cert up to a non-root place you control.
 $ adb push 7bf17d07.0 /data/local/tmp/7bf17d07.0
 
